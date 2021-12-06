@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2048ab53-03a7-42b5-bf19-339b0b4c8cf1": {
+      "ProjectGuid": "2048ab53-03a7-42b5-bf19-339b0b4c8cf1",
+      "DisplayName": "Florella_MVC",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
