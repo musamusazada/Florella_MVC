@@ -16,7 +16,16 @@ namespace Florella_MVC.Controllers
         }
         public IActionResult Index()
         {
-            return View(new ViewModelCard { cardimages = _context.CardImages.ToList() ,cardText = _context.CardTexts.ToList(),listItems=_context.CardLists.ToList(), categoryList = _context.Categories.ToList(), productList = _context.Products.ToList(), forms = _context.Forms.ToList()});
+            return View(new ViewModelCard { 
+                cardimages = _context.CardImages.ToList() ,
+                cardText = _context.CardTexts.ToList(),
+                listItems=_context.CardLists.ToList(), 
+                categoryList = _context.Categories.ToList(),
+                productList = _context.Products.ToList(),
+                forms = _context.Forms.ToList(),
+                experts = _context.Experts.ToList(),
+                profiles = _context.Profiles.ToList()
+            });
         }
        
 

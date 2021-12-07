@@ -15,6 +15,12 @@ namespace Florella_MVC.DAL
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Form> Forms { get; set; }
+        public DbSet<Profiles> Profiles { get; set; }
+
+        public DbSet<Experts> Experts { get; set; }
+
+        public DbSet<Position> Positions { get; set; }
+
 
 
 
