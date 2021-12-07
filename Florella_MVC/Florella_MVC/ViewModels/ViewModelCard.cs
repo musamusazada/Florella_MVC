@@ -8,6 +8,12 @@ namespace Florella_MVC.ViewModels
         public List<CardImage> cardimages { get; set; }
         public List<CardText> cardText { get; set; }
         public List<CardList> listItems { get; set; }
+        public List<Category> categoryList { get; set; }
+
+        public List<Product> productList { get; set; }
+        public List<Form> forms { get; set; }
+
+
 
     }
 }

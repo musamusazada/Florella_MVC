@@ -12,5 +12,11 @@ namespace Florella_MVC.DAL
         public DbSet<CardImage> CardImages { get; set; }
         public DbSet<CardList> CardLists { get; set; }
         public DbSet<CardText> CardTexts { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Form> Forms { get; set; }
+
+
+
     }
 }

@@ -47,23 +47,22 @@
                                 <i class="fas fa-caret-down"></i>
                                 <ul class="category list-unstyled" style="display: none;">
                                     <li><a href="" data-id="all">All</a></li>
-                                    <li><a href="" data-id="popular">Popular</a></li>
-                                    <li><a href="" data-id="winter">Winter</a></li>
-                                    <li><a href="" data-id="various">Various</a></li>
-                                    <li><a href="" data-id="exotic">Exotic</a></li>
-                                    <li><a href="" data-id="green">Greens</a></li>
-                                    <li><a href="" data-id="cactuse">Cactuses</a></li>
+                                    @foreach (var item in cardModel.categoryList)
+                                    {
+                                        <li><a href="" data-id="@item.name.ToLower()">@item.name</a></li>
+
+                                    }
                                 </ul>
                             </li>
                         </ul>
                         <ul class="category d-none d-md-flex list-unstyled">
                             <li><a href="" data-id="all">All</a></li>
-                            <li><a href="" data-id="popular">Popular</a></li>
-                            <li><a href="" data-id="winter">Winter</a></li>
-                            <li><a href="" data-id="various">Various</a></li>
-                            <li><a href="" data-id="exotic">Exotic</a></li>
-                            <li><a href="" data-id="green">Greens</a></li>
-                            <li><a href="" data-id="cactuse">Cactuses</a></li>
+                            @foreach (var item in cardModel.categoryList)
+                            {
+                                <li><a href="" data-id="@item.name.ToLower()">@item.name</a></li>
+
+                            }
+
                         </ul>
                         <ul class="list-unstyled">
                             <li>
@@ -74,134 +73,27 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item text-center" data-id="popular">
-                            <div class="img">
-                                <a href="">
-                                    <img src="~/img/shop-14-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">Add to cart</span>
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item text-center" data-id="popular">
-                            <div class="img">
-                                <a href="">
-                                    <img src="~/img/shop-13-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">Add to cart</span>
-                                <span class="text-black-50">$259</span>
+                    @foreach (var pro in cardModel.productList)
+                    {
+                        <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                            <div class="product-item text-center" data-id="@pro.category.name.ToLower()">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="~/img/@pro.image" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>@pro.name</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">Add to cart</span>
+                                    <span class="text-black-50">$@pro.price</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item text-center" data-id="winter">
-                            <div class="img">
-                                <a href="">
-                                    <img src="~/img/shop-12-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">Add to cart</span>
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item text-center" data-id="winter">
-                            <div class="img">
-                                <a href="">
-                                    <img src="~/img/shop-11-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">Add to cart</span>
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item text-center" data-id="various">
-                            <div class="img">
-                                <a href="">
-                                    <img src="~/img/shop-10-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">Add to cart</span>
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item text-center" data-id="various">
-                            <div class="img">
-                                <a href="">
-                                    <img src="~/img/shop-9-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">Add to cart</span>
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item text-center" data-id="exotic">
-                            <div class="img">
-                                <a href="">
-                                    <img src="~/img/shop-8-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">Add to cart</span>
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item text-center" data-id="exotic">
-                            <div class="img">
-                                <a href="">
-                                    <img src="~/img/shop-7-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">Add to cart</span>
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
+
+                    }
+
                 </div>
             </div>
         </section>
@@ -210,12 +102,12 @@
 
         <!-- ABOUT START -->
 
-        <section id="about">
+        @*<section id="about">
             <div class="container py-5">
                 <div class="row py-5">
                     <div class="col-lg-6">
                         <div class="img">
-                            <img src="~/img/@cardModel.cardimages[0].image" class="img-fluid" alt="">
+                            <img src="~/img/@cardModel.cardimages.First().image" class="img-fluid" alt="">
                             <div
                                 class="player position-absolute rounded-circle d-flex align-items-center justify-content-center">
                                 <i class="fas fa-play fa-lg"></i>
@@ -224,8 +116,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="about-text mt-5 mt-lg-0 px-lg-5">
-                            @Html.Raw(cardModel.cardText[0].title)
-                            <p class="py-3">@cardModel.cardText[0].description</p>
+                            @Html.Raw(cardModel.cardText.First().title)
+                            <p class="py-3">@cardModel.cardText.First().description</p>
                             <ul class="list-unstyled">
                             @foreach(var item in cardModel.listItems)
                             {
@@ -236,7 +128,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>*@
 
         <!-- ABOUT END -->
 
@@ -310,12 +202,12 @@
 
         <!-- SUBSCRIBE START -->
 
-        <section id="subscribe">
+        <section id="subscribe" style="background-image: @cardModel.forms.First().img !important">
             <div class="container py-5">
                 <div class="row py-5">
                     <div class="col-12">
                         <div class="content text-center py-5">
-                            <h3>Join The Colorful Bunch!</h3>
+                            <h3>@cardModel.forms.First().desc</h3>
                             <div class="form-group d-flex justify-content-center flex-wrap mt-5">
                                 <input type="email" placeholder="Email Address" class="form-control-lg rounded-0">
                                 <button class="btn btn-danger btn-lg rounded-0 px-5 mt-3 mt-sm-0">Subscribe</button>
