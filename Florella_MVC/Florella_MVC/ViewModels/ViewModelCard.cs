@@ -11,10 +11,7 @@ namespace Florella_MVC.ViewModels
         public List<Category> categoryList { get; set; }
 
         public List<Product> productList { get; set; }
-        public List<Form> forms { get; set; }
 
-        public List<Experts> experts { get; set; }
-        public List<Profiles> profiles { get; set; }
 
 
 

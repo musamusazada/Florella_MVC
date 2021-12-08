@@ -22,9 +22,6 @@ namespace Florella_MVC.Controllers
                 listItems=_context.CardLists.ToList(), 
                 categoryList = _context.Categories.ToList(),
                 productList = _context.Products.ToList(),
-                forms = _context.Forms.ToList(),
-                experts = _context.Experts.ToList(),
-                profiles = _context.Profiles.ToList()
             });
         }
        
