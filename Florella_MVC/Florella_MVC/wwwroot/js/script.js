@@ -147,4 +147,16 @@ $(document).ready(function () {
             }
         );
       });
+
+    $(document).ready(function () {
+        $("#loadMore").on("click", () => {
+            $.ajax({
+                type: "GET",
+                url: "Product/LoadMore",
+                success: function (res) {
+                    $("#product-cont").append(res);
+                }
+            })
+        })
+    })
 })

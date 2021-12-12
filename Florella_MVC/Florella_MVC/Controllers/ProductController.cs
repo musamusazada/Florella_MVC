@@ -19,7 +19,14 @@ namespace Florella_MVC.Controllers
         }
         public IActionResult Index()
         {
-            return View(new ViewModelProduct {products = _context.Products.Include(p=>p.category).ToList() });
+            var Products = _context.Products.Take(4).Include(p => p.category).ToList();
+            return View(new ViewModelProduct {products = Products });
+        }
+
+        public PartialViewResult LoadMore() {
+
+            var Products = _context.Products.Skip(4).Include(p => p.category).ToList();
+            return PartialView("_ProductPartial",Products);
         }
     }
 }

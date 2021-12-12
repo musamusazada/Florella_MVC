@@ -1,0 +1,21 @@
+﻿@model List<Blog>
+
+<div class="row pb-5">
+    @foreach(var blog in Model)
+    {
+        <div class="col-md-6 col-lg-4">
+        <div class="item">
+            <div class="img position-relative">
+                <img src="img/@blog.image" class="img-fluid" alt="">
+                <div class="date rounded bg-light position-absolute py-1 px-2">
+                    <span>@Html.DisplayFor(disItem => blog.date)</span>
+                </div>
+            </div>
+            <div class="text mt-3 text-center px-5">
+                <h5>@blog.title</h5>
+                <p class="text-black-50">@blog.article</p>
+            </div>
+        </div>
+    </div>
+    }
+</div>

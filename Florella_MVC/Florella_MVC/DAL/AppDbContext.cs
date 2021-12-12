@@ -21,8 +21,9 @@ namespace Florella_MVC.DAL
 
         public DbSet<Position> Positions { get; set; }
 
+        public DbSet<Blog> Blogs { get; set; }
 
-
+        public DbSet<Author> Authors { get; set; }
 
     }
 }

@@ -1,0 +1,17 @@
+﻿@model List<Author>
+
+ @foreach(var author in Model)
+    {
+        <div class="item text-center">
+        <div class="img d-flex justify-content-center">
+            <img src="img/@author.image" alt="Author Image">
+        </div>
+        <div class="text text-muted pt-3 pb-5">
+            <i>@author.quote</i>
+        </div>
+        <div class="author">
+            <h6>@author.fullName</h6>
+            <p class="text-black-50">@author.jobTitle</p>
+        </div>
+    </div> 
+    }
