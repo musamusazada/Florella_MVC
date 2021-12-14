@@ -1,0 +1,13 @@
+﻿@model List<Product>
+
+
+@if (Model.Count == 0)
+{
+    <li>No Result</li>
+}
+else {
+@foreach (var item in Model)
+{
+    <li class="d-flex"><div class="img-wrapper"><img class="w-100" src="~/img/@item.image"></div><p>@item.name</p></li>
+}
+}

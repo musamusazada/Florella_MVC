@@ -159,4 +159,21 @@ $(document).ready(function () {
             })
         })
     })
+
+    $(document).on("input", "#input-search", function () {
+
+        let searchStr = $(this).val();
+
+        if (searchStr.length > 2) {
+            $.ajax({
+                type: "GET",
+                url: "Product/Search?searchedStr=" + searchStr,
+                success: function (res) {
+                    $(".search-result li:not(:first-child)").remove();
+                    $(".search-result").append(res);
+                }
+            });
+        }
+        
+    });
 })
