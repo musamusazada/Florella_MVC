@@ -25,5 +25,8 @@ namespace Florella_MVC.DAL
 
         public DbSet<Author> Authors { get; set; }
 
+        public DbSet<Instagram> Instagram { get; set; }
+
+
     }
 }
