@@ -23,6 +23,7 @@ namespace Florella_MVC
         }
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession();
             services.AddMvc().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
             services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(this._configuration.GetConnectionString("Default")));
 
@@ -37,7 +38,7 @@ namespace Florella_MVC
             }
             app.UseStaticFiles();
             app.UseRouting();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute("default","{controller=Home}/{action=Index}/{id?}");
