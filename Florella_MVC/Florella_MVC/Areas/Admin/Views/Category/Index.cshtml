@@ -1,0 +1,45 @@
+﻿@model List<Category>
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Basic Table</h4>
+                    <p class="card-description">
+                        Add class <code>.table</code>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model) { 
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>@item.name</td>
+                                    <a class="btn btn-primary" asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">
+                                        Details
+                                    </a>
+                                    <a class="btn btn-success" asp-controller="" asp-action="" asp-route-id="@item.Id">
+                                        Update
+                                    </a>
+                                    <a class="btn btn-danger" asp-controller="" asp-action="" asp-route-id="@item.Id">
+                                        Delete
+                                    </a>
+                                </tr>
+                                }
+                                
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
