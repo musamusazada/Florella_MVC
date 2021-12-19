@@ -1,0 +1,13 @@
+﻿@model List<BasketViewModel>
+
+
+@foreach(var item in Model){
+       <li class="d-flex flex-column">
+           <div class="img-wrapper"><img class="w-100" src="~/img/@item.image"></div>
+          <div >
+               <p>@item.name</p>
+                <p>@item.price</p>
+                 <p>@item.count</p>
+          </div>
+       </li>
+}

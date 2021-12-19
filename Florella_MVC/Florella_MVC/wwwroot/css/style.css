@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
+.shop-container{
+    overflow: auto;
+    max-height: 400px;
+    padding: 10px;
+}
 body {
-  font-family: Montserrat, sans-serif;
-  font-size: 15px;
-  line-height: 24px;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
 }
 
 ::-moz-selection {

@@ -58,12 +58,13 @@ namespace Florella_MVC.Controllers
             basketJson = JsonConvert.SerializeObject(basket);
             Response.Cookies.Append("Basket", basketJson);
 
-            return RedirectToAction("Index", "Home");
+            return Json(basketJson);
         }
 
-        public  IActionResult GetBasket()
+        public   IActionResult GetBasket()
         {
-            return Content(Request.Cookies["Basket"]);
+            var basket = JsonConvert.DeserializeObject<List<BasketViewModel>>(Request.Cookies["basket"]);
+            return PartialView("_BasketPartial", basket);
             
         }
     }

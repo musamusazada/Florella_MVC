@@ -176,4 +176,31 @@ $(document).ready(function () {
         }
         
     });
+
+    $(document).ready(function () {
+        const buttons = document.querySelectorAll(".addBtn");
+        const shopIcon = document.querySelector(".fa-shopping-bag");
+
+        buttons.forEach(el => el.addEventListener("click", () => {
+            const productID = el.closest(".product-item").getAttribute("data-proid")
+            $.ajax({
+                type: "GET",
+                url: "Basket/AddToBasket/" + productID,
+                success: function (res) {
+                    document.querySelector("#pro-count").innerHTML = JSON.parse(res).length;
+
+                }
+            })
+        }));
+
+        shopIcon.addEventListener("click", () => {
+            $.ajax({
+                type: "GET",
+                url: "Basket/GetBasket",
+                success: function (res) {
+                    document.querySelector(".shop-container").innerHTML = res;
+                }
+            })
+        })
+    })
 })
