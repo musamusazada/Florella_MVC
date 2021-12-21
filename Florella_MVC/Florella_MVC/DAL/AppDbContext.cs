@@ -28,6 +28,7 @@ namespace Florella_MVC.DAL
         public DbSet<Instagram> Instagram { get; set; }
         public DbSet<Layout> Layout { get; set; }
 
+        public DbSet<SliderImage> SliderImage { get; set; }
 
     }
 }

@@ -879,7 +879,6 @@ C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\
 C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
-C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
 C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
 C:\Users\musam\Desktop\Back-End\Florella_MVC\Florella_MVC\Florella_MVC\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\musam\Desktop\Back-End\Florella_MVC\Florella_MVC\Florella_MVC\bin\Debug\net5.0\appsettings.json
@@ -1044,3 +1043,12 @@ C:\Users\musam\Desktop\Back-End\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug
 C:\Users\musam\Desktop\Back-End\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Layout\Index.cshtml.g.cs
 C:\Users\musam\Desktop\Back-End\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Layout\Detail.cshtml.g.cs
 C:\Users\musam\Desktop\Back-End\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Layout\Create.cshtml.g.cs
+C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Create.cshtml.g.cs
+C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Delete.cshtml.g.cs
+C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Detail\Index.cshtml.g.cs
+C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Layout\Create.cshtml.g.cs
+C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Layout\Detail.cshtml.g.cs
+C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\Layout\Index.cshtml.g.cs
+C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Views\Shared\_BasketPartial.cshtml.g.cs
+C:\Users\musaam\Desktop\Florella_MVC\Florella_MVC\Florella_MVC\obj\Debug\net5.0\Razor\Areas\Admin\Views\SliderImage\Index.cshtml.g.cs

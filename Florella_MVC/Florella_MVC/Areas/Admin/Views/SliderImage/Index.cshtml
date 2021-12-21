@@ -1,0 +1,51 @@
+﻿@model List<SliderImage>
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Basic Table</h4>
+                    <p class="card-description">
+                        Add class <code>.table</code>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td> <img src="~/img/@item.Image" alt="Alternate Text" style="width: 200px; height: 200px; object-fit:cover; object-position:center;"/></td>
+                                        <td>
+                                            <a class="btn btn-primary" asp-area="Admin" asp-controller="SliderImage" asp-action="Index" asp-route-id="@item.Id">
+                                                Details
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-success" asp-controller="SliderImage" asp-action="" asp-route-id="@item.Id">
+                                                Update
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-danger" asp-controller="SliderImage" asp-action="" asp-route-id="@item.Id">
+                                                Delete
+                                            </a>
+                                        </td>
+
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
