@@ -25,13 +25,13 @@
                                         <td>@item.facebook_url</td>
                                         <td>@item.twitter_url</td>
 
-                                        <td><a class="btn btn-primary" asp-area="Admin" asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">
+                                        <td><a class="btn btn-primary" asp-area="Admin" asp-controller="Layout" asp-action="Detail" asp-route-id="@item.Id">
                                             Details
                                         </a></td>
                                         <td> <a class="btn btn-success" asp-controller="" asp-action="" asp-route-id="@item.Id">
                                             Update
                                         </a></td>
-                                        <td>   <a class="btn btn-danger" asp-controller="" asp-action="" asp-route-id="@item.Id">
+                                        <td>   <a class="btn btn-danger" asp-controller="Layout" asp-action="Delete" asp-route-id="@item.Id">
                                             Delete
                                         </a></td>
                                      
