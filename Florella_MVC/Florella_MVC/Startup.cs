@@ -25,7 +25,7 @@ namespace Florella_MVC
         {
             services.AddSession();
             services.AddMvc().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
-            services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(this._configuration.GetConnectionString("Default")));
+            services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(this._configuration.GetConnectionString("Default"),builder => builder.MigrationsAssembly(nameof(Florella_MVC))));
 
         }
 
@@ -39,6 +39,7 @@ namespace Florella_MVC
             app.UseStaticFiles();
             app.UseRouting();
             app.UseSession();
+            app.Seed();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
